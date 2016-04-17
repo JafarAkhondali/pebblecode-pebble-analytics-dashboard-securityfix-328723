@@ -1,0 +1,14 @@
+{
+  "name": "pebble-analytics",
+  "version": "1.0.0",
+  "description": "Data Visualization for Google Analytics on Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clorama Dorvilias",
+  "license": "ISC",
+  "dependencies": {
+    "webcomponents.js": "^0.7.21"
+  }
+}
