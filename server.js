@@ -2,7 +2,7 @@ var http = require("http"),
     url = require("url"),
     path = require("path"),
     fs = require("fs")
-    port = process.argv[2] || 8888;
+    port = process.argv[2] || 8080;
 
 http.createServer(function(request, response) {
 
@@ -17,7 +17,7 @@ http.createServer(function(request, response) {
       return;
     }
 
-    if (fs.statSync(filename).isDirectory()) filename += '/index0.html';
+    if (fs.statSync(filename).isDirectory()) filename += '/index2.html';
 
     fs.readFile(filename, "binary", function(err, file) {
       if(err) {        
